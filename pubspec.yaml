@@ -1,14 +1,18 @@
 name: plantery
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
-  sdk: '>=3.2.3 <4.0.0'
+  sdk: ">=3.2.3 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
+  # Routing
+  go_router: ^12.1.1
+  # Remove # symbol from url in web app
+  url_strategy: ^0.2.0
 
 dev_dependencies:
   flutter_test:
@@ -16,4 +20,7 @@ dev_dependencies:
   flutter_lints: ^2.0.0
 
 flutter:
+  assets:
+    - assets/images/
+  # Use Material 3
   uses-material-design: true
